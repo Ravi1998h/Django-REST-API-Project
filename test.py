@@ -27,7 +27,7 @@ def delete_resource(id):
     print(response.status_code)
     print(response.json())
 
-print("Enter 1-->get record 2---> Create a record 3-->update a record 4--->Delate a record")
+print("Enter 1--->get record 2---> Create a record 3--->update a record 4--->Delate a record")
 print("Enter your choice")
 ch=int(input())
 if ch==1:
