@@ -3,9 +3,9 @@ import json
 BASE_URL='http://127.0.0.1:8000/'
 ENDPOINT='api/'
 def get_resource(id=None):
-    data={} #we need all records
+    data={}
     if id is not None:
-        data={'id':id} #we need a particular record
+        data={'id':id}
     response=requests.get(BASE_URL+ENDPOINT,data=json.dumps(data))
     print(response.status_code)
     print(response.json())
